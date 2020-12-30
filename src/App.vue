@@ -1,32 +1,47 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <div class="d-flex align-center title font-weight-bold" @click="$router.push('/')" style="cursor: pointer">
+        Live Polling
+      </div>
+
+      <v-spacer></v-spacer>
+    </v-app-bar>
+
+    <v-main>
+      <router-view/>
+    </v-main>
+
+    <v-footer class="mt-5">
+    <v-col
+      class="text-center"
+      cols="12"
+    >
+      {{ new Date().getFullYear() }} — <strong>Live Polling</strong>
+    </v-col>
+  </v-footer>
+  </v-app>
 </template>
 
+<script>
+
+export default {
+  name: 'App',
+
+  components: {
+
+  },
+  data: () => ({
+    //
+  }),
+};
+</script>
+
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

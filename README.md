@@ -1,13 +1,13 @@
-# polling
 
-## Project setup
+# polling-app-using-node-js-and-vue-js
+## Frontend setup
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm start
 ```
 
 ### Compiles and minifies for production
@@ -15,11 +15,17 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+## backend setup
+
+## Go to server Folder
+
+
+## backend setup
 ```
-npm run lint
+npm install
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-"# polling-app-using-node-js-and-vue-js" 
+### Compiles and hot-reloads for development
+```
+npm start
+```
