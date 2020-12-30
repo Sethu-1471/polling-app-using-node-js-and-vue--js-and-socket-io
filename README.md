@@ -17,7 +17,7 @@ npm run build
 
 ## backend setup
 
-## Go to server Folder
+Go to server Folder
 
 
 ## backend setup
